@@ -1,66 +1,68 @@
-## Foundry
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+## 🔧 Utilisation (Tests, Compilation, Audit)
 
-Foundry consists of:
+### 📦 Installation des dépendances
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
-
-## Documentation
-
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
+```bash
+forge install
 ```
 
-### Test
+### 🧪 Tests
 
-```shell
-$ forge test
+```bash
+forge test
 ```
 
-### Format
+Options utiles :
 
-```shell
-$ forge fmt
+- Exécution verbeuse :
+  ```bash
+  forge test -vvvv
+  ```
+
+- Tests avec un fork (ex: mainnet/testnet) :
+  ```bash
+  forge test --fork-url <YOUR_RPC_URL>
+  ```
+
+### 🛠️ Compilation
+
+```bash
+forge build
 ```
 
-### Gas Snapshots
+Nettoyer les fichiers générés :
 
-```shell
-$ forge snapshot
+```bash
+forge clean
 ```
 
-### Anvil
+### 📊 Couverture de tests (audit interne)
 
-```shell
-$ anvil
+```bash
+forge coverage --report debug
 ```
 
-### Deploy
+Générer un rapport HTML (si `lcov` est installé) :
 
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
+```bash
+forge coverage --report lcov
+genhtml lcov.info -o coverage-report
 ```
 
-### Cast
+### 🔍 Analyse statique et vérification
 
-```shell
-$ cast <subcommand>
-```
+- Vérifier le format du code :
+  ```bash
+  forge fmt --check
+  ```
 
-### Help
+- Créer un snapshot des tests (pour comparaison future) :
+  ```bash
+  forge snapshot
+  ```
 
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+- Vérifier un contrat sur Etherscan (avec une clé API) :
+  ```bash
+  forge verify-contract --chain-id <CHAIN_ID> <CONTRACT_ADDRESS> <CONTRACT_PATH>:<CONTRACT_NAME> --etherscan-api-key <API_KEY>
+  ```
