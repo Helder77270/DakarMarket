@@ -46,6 +46,26 @@ contract DakarMarketTest is Test {
          assertEq(block.timestamp, item0.arrival);
          assertEq(block.timestamp + 1 weeks, item0.peremption);
     }
-    
+
+    function test_BuyItemByUser() public {
+         // L'administrateur crée un objet sur le marché
+         vm.startPrank(admin);
+            dakarMarket.createItem("Cafe", 10);
+
+            dakarMarket.mint(buyer1, 100);
+         vm.stopPrank();
+
+         assertEq(dakarMarket.balanceOf(buyer1), 100);
+
+         vm.startPrank(buyer1);
+            dakarMarket.buyItem(0);
+         vm.stopPrank();
+        
+        // Récupération de l'objet nouvellement créé
+        DakarMarket.Object memory item0 = dakarMarket.getItem(0);
+
+        assertEq(buyer1, item0.owner, "Owner incorrecterment mis a jour");
+        assertEq(dakarMarket.balanceOf(buyer1), (100 - item0.price) , "Balance incorrecterment mis a jour");
+    }
 
 }

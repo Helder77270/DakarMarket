@@ -1,0 +1,387 @@
+Compiling 29 files with Solc 0.8.28
+Solc 0.8.28 finished in 2.03s
+Compiler run successful!
+Analysing contracts...
+Running tests...
+
+Ran 2 tests for test/DakarMarket.t.sol:DakarMarketTest
+[PASS] test_BuyItemByUser() (gas: 241276)
+[PASS] test_CreateItemByAdmin() (gas: 159838)
+Suite result: ok. 2 passed; 0 failed; 0 skipped; finished in 2.15ms (1.15ms CPU time)
+
+Ran 1 test suite in 6.70ms (2.15ms CPU time): 2 tests passed, 0 failed, 0 skipped (2 total tests)
+Uncovered for script/DakarMarket.s.sol:
+- Function "setUp" (location: source ID 25, line 10, chars 258-284, hits: 0)
+- Function "run" (location: source ID 25, line 12, chars 290-419, hits: 0)
+- Line (location: source ID 25, line 13, chars 322-341, hits: 0)
+- Statement (location: source ID 25, line 13, chars 322-341, hits: 0)
+- Line (location: source ID 25, line 15, chars 352-383, hits: 0)
+- Statement (location: source ID 25, line 15, chars 352-383, hits: 0)
+- Line (location: source ID 25, line 17, chars 394-412, hits: 0)
+- Statement (location: source ID 25, line 17, chars 394-412, hits: 0)
+
+Uncovered for src/DakarMarket.sol:
+- Branch (branch: 0, path: 0) (location: source ID 26, line 45, chars 1429-1480, hits: 0)
+- Branch (branch: 1, path: 0) (location: source ID 26, line 46, chars 1490-1577, hits: 0)
+- Function "getItem2" (location: source ID 26, line 62, chars 2003-2299, hits: 0)
+- Line (location: source ID 26, line 63, chars 2115-2291, hits: 0)
+- Statement (location: source ID 26, line 63, chars 2115-2291, hits: 0)
+- Function "getAllObjects" (location: source ID 26, line 73, chars 2369-2647, hits: 0)
+- Line (location: source ID 26, line 75, chars 2453-2509, hits: 0)
+- Statement (location: source ID 26, line 75, chars 2453-2509, hits: 0)
+- Statement (location: source ID 26, line 75, chars 2482-2509, hits: 0)
+- Line (location: source ID 26, line 77, chars 2525-2538, hits: 0)
+- Statement (location: source ID 26, line 77, chars 2525-2538, hits: 0)
+- Statement (location: source ID 26, line 77, chars 2540-2557, hits: 0)
+- Statement (location: source ID 26, line 77, chars 2559-2562, hits: 0)
+- Line (location: source ID 26, line 78, chars 2577-2601, hits: 0)
+- Statement (location: source ID 26, line 78, chars 2577-2601, hits: 0)
+- Line (location: source ID 26, line 81, chars 2622-2639, hits: 0)
+- Statement (location: source ID 26, line 81, chars 2622-2639, hits: 0)
+
+Uncovered for src/DakarToken.sol:
+- Branch (branch: 0, path: 0) (location: source ID 27, line 37, chars 1239-1284, hits: 0)
+- Function "getAdmin" (location: source ID 27, line 43, chars 1444-1521, hits: 0)
+- Function "setAdmin" (location: source ID 27, line 53, chars 1944-2072, hits: 0)
+- Line (location: source ID 27, line 54, chars 2007-2038, hits: 0)
+- Statement (location: source ID 27, line 54, chars 2007-2038, hits: 0)
+- Line (location: source ID 27, line 55, chars 2048-2065, hits: 0)
+- Statement (location: source ID 27, line 55, chars 2048-2065, hits: 0)
+
+Anchors for Contract "IERC20Errors" (solc 0.8.28, source ID 20):
+
+Anchors for Contract "stdError" (solc 0.8.28, source ID 6):
+
+Anchors for Contract "IERC1155Errors" (solc 0.8.28, source ID 20):
+
+Anchors for Contract "stdStorageSafe" (solc 0.8.28, source ID 10):
+
+Anchors for Contract "IERC20Metadata" (solc 0.8.28, source ID 23):
+
+Anchors for Contract "TestBase" (solc 0.8.28, source ID 0):
+
+Anchors for Contract "Vm" (solc 0.8.28, source ID 15):
+
+Anchors for Contract "StdConstants" (solc 0.8.28, source ID 5):
+
+Anchors for Contract "IMulticall3" (solc 0.8.28, source ID 18):
+
+Anchors for Contract "safeconsole" (solc 0.8.28, source ID 19):
+
+Anchors for Contract "DakarMarketTest" (solc 0.8.28, source ID 28):
+
+Anchors for Contract "CounteDakarMarketScript" (solc 0.8.28, source ID 25):
+- IC 81 -> Item 0
+- Creation code
+  - Refers to item: Function "setUp" (location: source ID 25, line 10, chars 258-284, hits: 0)
+- IC 121 -> Item 1
+- Creation code
+  - Refers to item: Function "run" (location: source ID 25, line 12, chars 290-419, hits: 0)
+- IC 223 -> Item 2
+- Creation code
+  - Refers to item: Line (location: source ID 25, line 13, chars 322-341, hits: 0)
+- IC 223 -> Item 3
+- Creation code
+  - Refers to item: Statement (location: source ID 25, line 13, chars 322-341, hits: 0)
+- IC 318 -> Item 4
+- Creation code
+  - Refers to item: Line (location: source ID 25, line 15, chars 352-383, hits: 0)
+- IC 318 -> Item 5
+- Creation code
+  - Refers to item: Statement (location: source ID 25, line 15, chars 352-383, hits: 0)
+- IC 444 -> Item 6
+- Creation code
+  - Refers to item: Line (location: source ID 25, line 17, chars 394-412, hits: 0)
+- IC 444 -> Item 7
+- Creation code
+  - Refers to item: Statement (location: source ID 25, line 17, chars 394-412, hits: 0)
+
+Anchors for Contract "IERC20" (solc 0.8.28, source ID 22):
+
+Anchors for Contract "DakarMarket" (solc 0.8.28, source ID 26):
+- IC 5 -> Item 8
+- Runtime code
+  - Refers to item: Function "" (location: source ID 26, line 25, chars 621-642, hits: 2)
+- IC 160 -> Item 51
+- Runtime code
+  - Refers to item: Function "" (location: source ID 27, line 27, chars 878-1060, hits: 2)
+- IC 160 -> Item 52
+- Runtime code
+  - Refers to item: Line (location: source ID 27, line 31, chars 1035-1053, hits: 2)
+- IC 160 -> Item 53
+- Runtime code
+  - Refers to item: Statement (location: source ID 27, line 31, chars 1035-1053, hits: 2)
+- IC 796 -> Item 9
+- Creation code
+  - Refers to item: Function "createItem" (location: source ID 26, line 29, chars 648-1114, hits: 2)
+- IC 2715 -> Item 10
+- Creation code
+  - Refers to item: Line (location: source ID 26, line 31, chars 769-869, hits: 2)
+- IC 2715 -> Item 11
+- Creation code
+  - Refers to item: Statement (location: source ID 26, line 31, chars 769-869, hits: 2)
+- IC 2794 -> Item 12
+- Creation code
+  - Refers to item: Line (location: source ID 26, line 33, chars 922-948, hits: 2)
+- IC 2794 -> Item 13
+- Creation code
+  - Refers to item: Statement (location: source ID 26, line 33, chars 922-948, hits: 2)
+- IC 2942 -> Item 14
+- Creation code
+  - Refers to item: Line (location: source ID 26, line 35, chars 1092-1107, hits: 2)
+- IC 2942 -> Item 15
+- Creation code
+  - Refers to item: Statement (location: source ID 26, line 35, chars 1092-1107, hits: 2)
+- IC 980 -> Item 16
+- Creation code
+  - Refers to item: Function "buyItem" (location: source ID 26, line 42, chars 1302-1817, hits: 1)
+- IC 3735 -> Item 17
+- Creation code
+  - Refers to item: Line (location: source ID 26, line 43, chars 1351-1383, hits: 1)
+- IC 3735 -> Item 18
+- Creation code
+  - Refers to item: Statement (location: source ID 26, line 43, chars 1351-1383, hits: 1)
+- IC 3758 -> Item 19
+- Creation code
+  - Refers to item: Line (location: source ID 26, line 44, chars 1393-1419, hits: 1)
+- IC 3758 -> Item 20
+- Creation code
+  - Refers to item: Statement (location: source ID 26, line 44, chars 1393-1419, hits: 1)
+- IC 3763 -> Item 21
+- Creation code
+  - Refers to item: Line (location: source ID 26, line 45, chars 1429-1480, hits: 1)
+- IC 3763 -> Item 22
+- Creation code
+  - Refers to item: Statement (location: source ID 26, line 45, chars 1429-1480, hits: 1)
+- IC 3853 -> Item 23
+- Creation code
+  - Refers to item: Branch (branch: 0, path: 0) (location: source ID 26, line 45, chars 1429-1480, hits: 0)
+- IC 3912 -> Item 24
+- Creation code
+  - Refers to item: Branch (branch: 0, path: 1) (location: source ID 26, line 45, chars 1429-1480, hits: 1)
+- IC 3914 -> Item 25
+- Creation code
+  - Refers to item: Line (location: source ID 26, line 46, chars 1490-1577, hits: 1)
+- IC 3914 -> Item 26
+- Creation code
+  - Refers to item: Statement (location: source ID 26, line 46, chars 1490-1577, hits: 1)
+- IC 3950 -> Item 27
+- Creation code
+  - Refers to item: Branch (branch: 1, path: 0) (location: source ID 26, line 46, chars 1490-1577, hits: 0)
+- IC 4010 -> Item 28
+- Creation code
+  - Refers to item: Branch (branch: 1, path: 1) (location: source ID 26, line 46, chars 1490-1577, hits: 1)
+- IC 4013 -> Item 29
+- Creation code
+  - Refers to item: Line (location: source ID 26, line 52, chars 1749-1781, hits: 1)
+- IC 4013 -> Item 30
+- Creation code
+  - Refers to item: Statement (location: source ID 26, line 52, chars 1749-1781, hits: 1)
+- IC 4064 -> Item 31
+- Creation code
+  - Refers to item: Line (location: source ID 26, line 53, chars 1791-1809, hits: 1)
+- IC 4064 -> Item 32
+- Creation code
+  - Refers to item: Statement (location: source ID 26, line 53, chars 1791-1809, hits: 1)
+- IC 450 -> Item 33
+- Creation code
+  - Refers to item: Function "getItem" (location: source ID 26, line 57, chars 1859-1959, hits: 2)
+- IC 1255 -> Item 34
+- Creation code
+  - Refers to item: Line (location: source ID 26, line 58, chars 1934-1951, hits: 2)
+- IC 1255 -> Item 35
+- Creation code
+  - Refers to item: Statement (location: source ID 26, line 58, chars 1934-1951, hits: 2)
+- IC 586 -> Item 36
+- Creation code
+  - Refers to item: Function "getItem2" (location: source ID 26, line 62, chars 2003-2299, hits: 0)
+- IC 1699 -> Item 37
+- Creation code
+  - Refers to item: Line (location: source ID 26, line 63, chars 2115-2291, hits: 0)
+- IC 1699 -> Item 38
+- Creation code
+  - Refers to item: Statement (location: source ID 26, line 63, chars 2115-2291, hits: 0)
+- IC 902 -> Item 39
+- Creation code
+  - Refers to item: Function "getAllObjects" (location: source ID 26, line 73, chars 2369-2647, hits: 0)
+- IC 3154 -> Item 40
+- Creation code
+  - Refers to item: Line (location: source ID 26, line 75, chars 2453-2509, hits: 0)
+- IC 3154 -> Item 41
+- Creation code
+  - Refers to item: Statement (location: source ID 26, line 75, chars 2453-2509, hits: 0)
+- IC 3156 -> Item 42
+- Creation code
+  - Refers to item: Statement (location: source ID 26, line 75, chars 2482-2509, hits: 0)
+- IC 3244 -> Item 43
+- Creation code
+  - Refers to item: Line (location: source ID 26, line 77, chars 2525-2538, hits: 0)
+- IC 3244 -> Item 44
+- Creation code
+  - Refers to item: Statement (location: source ID 26, line 77, chars 2525-2538, hits: 0)
+- IC 3247 -> Item 45
+- Creation code
+  - Refers to item: Statement (location: source ID 26, line 77, chars 2540-2557, hits: 0)
+- IC 3579 -> Item 46
+- Creation code
+  - Refers to item: Statement (location: source ID 26, line 77, chars 2559-2562, hits: 0)
+- IC 3257 -> Item 47
+- Creation code
+  - Refers to item: Line (location: source ID 26, line 78, chars 2577-2601, hits: 0)
+- IC 3257 -> Item 48
+- Creation code
+  - Refers to item: Statement (location: source ID 26, line 78, chars 2577-2601, hits: 0)
+- IC 3593 -> Item 49
+- Creation code
+  - Refers to item: Line (location: source ID 26, line 81, chars 2622-2639, hits: 0)
+- IC 3593 -> Item 50
+- Creation code
+  - Refers to item: Statement (location: source ID 26, line 81, chars 2622-2639, hits: 0)
+- IC 1563 -> Item 54
+- Creation code
+  - Refers to item: Function "onlyAdmin" (location: source ID 27, line 35, chars 1143-1375, hits: 1)
+- IC 1563 -> Item 55
+- Creation code
+  - Refers to item: Line (location: source ID 27, line 37, chars 1239-1284, hits: 1)
+- IC 1563 -> Item 56
+- Creation code
+  - Refers to item: Statement (location: source ID 27, line 37, chars 1239-1284, hits: 1)
+- IC 2665 -> Item 57
+- Creation code
+  - Refers to item: Branch (branch: 0, path: 0) (location: source ID 27, line 37, chars 1239-1284, hits: 0)
+- IC 2714 -> Item 58
+- Creation code
+  - Refers to item: Branch (branch: 0, path: 1) (location: source ID 27, line 37, chars 1239-1284, hits: 2)
+- IC 638 -> Item 59
+- Creation code
+  - Refers to item: Function "getAdmin" (location: source ID 27, line 43, chars 1444-1521, hits: 0)
+- IC 2006 -> Item 60
+- Creation code
+  - Refers to item: Line (location: source ID 27, line 44, chars 1502-1514, hits: 3)
+- IC 2006 -> Item 61
+- Creation code
+  - Refers to item: Statement (location: source ID 27, line 44, chars 1502-1514, hits: 3)
+- IC 668 -> Item 62
+- Creation code
+  - Refers to item: Function "setAdmin" (location: source ID 27, line 53, chars 1944-2072, hits: 0)
+- IC 2154 -> Item 63
+- Creation code
+  - Refers to item: Line (location: source ID 27, line 54, chars 2007-2038, hits: 0)
+- IC 2154 -> Item 64
+- Creation code
+  - Refers to item: Statement (location: source ID 27, line 54, chars 2007-2038, hits: 0)
+- IC 2245 -> Item 65
+- Creation code
+  - Refers to item: Line (location: source ID 27, line 55, chars 2048-2065, hits: 0)
+- IC 2245 -> Item 66
+- Creation code
+  - Refers to item: Statement (location: source ID 27, line 55, chars 2048-2065, hits: 0)
+- IC 528 -> Item 67
+- Creation code
+  - Refers to item: Function "mint" (location: source ID 27, line 61, chars 2279-2540, hits: 1)
+- IC 1671 -> Item 68
+- Creation code
+  - Refers to item: Line (location: source ID 27, line 64, chars 2511-2532, hits: 1)
+- IC 1671 -> Item 69
+- Creation code
+  - Refers to item: Statement (location: source ID 27, line 64, chars 2511-2532, hits: 1)
+
+Anchors for Contract "StdCheats" (solc 0.8.28, source ID 4):
+
+Anchors for Contract "DakarToken" (solc 0.8.28, source ID 27):
+- IC 5 -> Item 51
+- Runtime code
+  - Refers to item: Function "" (location: source ID 27, line 27, chars 878-1060, hits: 2)
+- IC 160 -> Item 52
+- Runtime code
+  - Refers to item: Line (location: source ID 27, line 31, chars 1035-1053, hits: 2)
+- IC 160 -> Item 53
+- Runtime code
+  - Refers to item: Statement (location: source ID 27, line 31, chars 1035-1053, hits: 2)
+- IC 879 -> Item 54
+- Creation code
+  - Refers to item: Function "onlyAdmin" (location: source ID 27, line 35, chars 1143-1375, hits: 1)
+- IC 879 -> Item 55
+- Creation code
+  - Refers to item: Line (location: source ID 27, line 37, chars 1239-1284, hits: 1)
+- IC 879 -> Item 56
+- Creation code
+  - Refers to item: Statement (location: source ID 27, line 37, chars 1239-1284, hits: 1)
+- IC 1101 -> Item 57
+- Creation code
+  - Refers to item: Branch (branch: 0, path: 0) (location: source ID 27, line 37, chars 1239-1284, hits: 0)
+- IC 1150 -> Item 58
+- Creation code
+  - Refers to item: Branch (branch: 0, path: 1) (location: source ID 27, line 37, chars 1239-1284, hits: 2)
+- IC 399 -> Item 59
+- Creation code
+  - Refers to item: Function "getAdmin" (location: source ID 27, line 43, chars 1444-1521, hits: 0)
+- IC 1003 -> Item 60
+- Creation code
+  - Refers to item: Line (location: source ID 27, line 44, chars 1502-1514, hits: 3)
+- IC 1003 -> Item 61
+- Creation code
+  - Refers to item: Statement (location: source ID 27, line 44, chars 1502-1514, hits: 3)
+- IC 429 -> Item 62
+- Creation code
+  - Refers to item: Function "setAdmin" (location: source ID 27, line 53, chars 1944-2072, hits: 0)
+- IC 1151 -> Item 63
+- Creation code
+  - Refers to item: Line (location: source ID 27, line 54, chars 2007-2038, hits: 0)
+- IC 1151 -> Item 64
+- Creation code
+  - Refers to item: Statement (location: source ID 27, line 54, chars 2007-2038, hits: 0)
+- IC 1242 -> Item 65
+- Creation code
+  - Refers to item: Line (location: source ID 27, line 55, chars 2048-2065, hits: 0)
+- IC 1242 -> Item 66
+- Creation code
+  - Refers to item: Statement (location: source ID 27, line 55, chars 2048-2065, hits: 0)
+- IC 371 -> Item 67
+- Creation code
+  - Refers to item: Function "mint" (location: source ID 27, line 61, chars 2279-2540, hits: 1)
+- IC 987 -> Item 68
+- Creation code
+  - Refers to item: Line (location: source ID 27, line 64, chars 2511-2532, hits: 1)
+- IC 987 -> Item 69
+- Creation code
+  - Refers to item: Statement (location: source ID 27, line 64, chars 2511-2532, hits: 1)
+
+Anchors for Contract "StdAssertions" (solc 0.8.28, source ID 2):
+
+Anchors for Contract "Script" (solc 0.8.28, source ID 1):
+
+Anchors for Contract "stdMath" (solc 0.8.28, source ID 9):
+
+Anchors for Contract "IERC721Errors" (solc 0.8.28, source ID 20):
+
+Anchors for Contract "stdStorage" (solc 0.8.28, source ID 10):
+
+Anchors for Contract "Test" (solc 0.8.28, source ID 14):
+
+Anchors for Contract "stdJson" (solc 0.8.28, source ID 8):
+
+Anchors for Contract "CommonBase" (solc 0.8.28, source ID 0):
+
+Anchors for Contract "stdToml" (solc 0.8.28, source ID 12):
+
+Anchors for Contract "ERC20" (solc 0.8.28, source ID 21):
+
+Anchors for Contract "console" (solc 0.8.28, source ID 16):
+
+Anchors for Contract "ScriptBase" (solc 0.8.28, source ID 0):
+
+Anchors for Contract "StdChains" (solc 0.8.28, source ID 3):
+
+Anchors for Contract "Context" (solc 0.8.28, source ID 24):
+
+Anchors for Contract "StdInvariant" (solc 0.8.28, source ID 7):
+
+Anchors for Contract "StdCheatsSafe" (solc 0.8.28, source ID 4):
+
+Anchors for Contract "StdStyle" (solc 0.8.28, source ID 11):
+
+Anchors for Contract "StdUtils" (solc 0.8.28, source ID 13):
+
+Anchors for Contract "VmSafe" (solc 0.8.28, source ID 15):
+

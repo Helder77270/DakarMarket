@@ -45,15 +45,13 @@ contract DakarMarket is DakarToken{
         require(item.owner != buyer, CantBuyOwnItem(buyer));
         require(balanceOf(buyer) >= item.price, NotEnoughBalance(item.price, balanceOf(buyer)));
 
-        item.owner = buyer;
-
         // Optimal, car c'est l'utilisateur qui envoie de force ses tokens
-        _transfer(buyer, item.owner, item.price);
+        // _transfer(buyer, item.owner, item.price);
 
         //Optimal et sécurisé
         transfer(item.owner, item.price);
-        
-                
+        item.owner = buyer;
+
     }
     // Créer la fonction getItem()
      function getItem(uint256 _id) public view returns (Object memory){
