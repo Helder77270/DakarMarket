@@ -4,7 +4,7 @@ pragma solidity ^0.8.13;
 import {Script, console} from "forge-std/Script.sol";
 import {DakarMarket} from "../src/DakarMarket.sol";
 
-contract CounteDakarMarketScript is Script {
+contract DakarMarketScript is Script {
     DakarMarket public dakarMarket;
 
     function setUp() public {}
